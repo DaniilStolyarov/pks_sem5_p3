@@ -9,3 +9,6 @@
 <p>
   <code>flutter pub get</code>
 </p>
+<p>
+  <code>dart run build_runner watch --delete-conflicting-outputs</code>
+</p>
