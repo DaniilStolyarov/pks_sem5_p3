@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/Catalog.dart';
+import 'pages/catalog.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, brightness: Brightness.dark),
         useMaterial3: true,
       ),
-      home: const Catalog(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Стрижки"),
+        ),
+        body: const Catalog()
+      ),
     );
   }
 }
